@@ -12,4 +12,3 @@ $(() => {
   $('#demo').on('submit', events.clicked)
 })
 //
-test
