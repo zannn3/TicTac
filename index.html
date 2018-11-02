@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h1>Fun Game</h1>
+  <h2>Horsing around Tic </h2>
+  <form>
+    <input name="credentials[email]" type="text" value="email address">
+    <input name="credentials[email]" type="submit" value="submit">
+    <input name="credentials[password]" type="password" value="an example password">
+    <input name="credentials[password_confirmation]" type="password" value="an example password">
+  </form>
+
+  <div class="col-xs-12" style="height:50px;"> </div>
+  <div class="container">
+    <h2>Game</h2>
+    <div class="row">
+      <div class="col-3 col-md-3 tile square box teal" id="demo" onclick="myFunction()">
+        <div class="d-flex justify-content-center padding1">
+          <p id='res1' onclick="myFunction()"> click </p>
+        </div>
+      </div>
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res2'> </div>
+        </div>
+      </div>
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res3'> </div>
+        </div>
+      </div>
+      <div class="w-100"> </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-md-3 tile square box teal" id="demo4" onclick="myFunction()">
+        <div class="d-flex justify-content-center padding1">
+          <p id='res4' onclick="myFunction()"> click </p>
+        </div>
+      </div>
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res5'> </div>
+        </div>
+      </div>
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res6'> </div>
+        </div>
+      </div>
+      <div class="w-100"> </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-md-3 tile square box teal" id="demo7" onclick="myFunction()">
+        <div class="d-flex justify-content-center padding1">
+          <p id='res7' onclick="myFunction()"> click </p>
+        </div>
+      </div>
+
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res8'> </div>
+        </div>
+      </div>
+      <div class="col-3 col-md-3 tile square box teal">
+        <div class="d-flex justify-content-center padding1">
+          <div id='res9'> </div>
+        </div>
+      </div>
+      <div class="w-100"> </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("demo").addEventListener("click", myFunction);
+
+     function myFunction() {
+         document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+      }
+  </script>
+
+</body>
+
+
+</html>
