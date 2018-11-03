@@ -5,10 +5,12 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-const events = require('./books/events')
-
+const events = require('./templates/books/events.js')
+console.log('outside')
 $(() => {
   // your JS code goes here
-  $('#demo').on('submit', events.clicked)
+  //  $('#create-game').on('click', events.onCreateGameClick)
+  console.log('in index js')
+  $('#demo').on('click', events.clicked)
 })
 //
