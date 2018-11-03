@@ -11,6 +11,16 @@ $(() => {
   // your JS code goes here
   //  $('#create-game').on('click', events.onCreateGameClick)
   console.log('in index js')
-  $('#demo').on('click', events.clicked)
+  for (let i = 1; i < 10; i++) {
+    $('#click' + i).on('click', events.clicked)
+  }
+  // $('#click2').on('click', events.clicked)
+  // $('#click3').on('click', events.clicked)
+  // $('#click4').on('click', events.clicked)
+  // $('#click5').on('click', events.clicked)
+  // $('#click6').on('click', events.clicked)
+  // $('#click7').on('click', events.clicked)
+  // $('#click8').on('click', events.clicked)
+  // $('#click9').on('click', events.clicked)
 })
 //

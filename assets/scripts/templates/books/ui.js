@@ -1,5 +1,9 @@
 
-const click = function (event) {
-  console.log('got into onGetAllBooks...about to prevent default')
-  event.preventDefault()
+const onClick = function (obj) {
+  // alert('Button clicked, id ' + obj + ', text' + obj.innerHTML)
+  console.log(obj)
+}
+
+module.exports = {
+  onClick
 }
